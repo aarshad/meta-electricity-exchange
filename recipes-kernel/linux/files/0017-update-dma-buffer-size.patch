@@ -1,0 +1,15 @@
+diff --git a/arch/arm/mach-omap2/serial.c b/arch/arm/mach-omap2/serial.c
+index 57dee0c7cd2b..c3b949d2c8df 100644
+--- a/arch/arm/mach-omap2/serial.c
++++ b/arch/arm/mach-omap2/serial.c
+@@ -66,8 +66,8 @@ static u8 console_uart_id = -1;
+ static u8 uart_debug;
+ 
+ #define DEFAULT_RXDMA_POLLRATE		1	/* RX DMA polling rate (us) */
+-#define DEFAULT_RXDMA_BUFSIZE		4096	/* RX DMA buffer size */
+-#define DEFAULT_RXDMA_TIMEOUT		(3 * HZ)/* RX DMA timeout (jiffies) */
++#define DEFAULT_RXDMA_BUFSIZE		65536	/* RX DMA buffer size */
++#define DEFAULT_RXDMA_TIMEOUT		(1 * HZ)/* RX DMA timeout (jiffies) */
+ 
+ static struct omap_uart_port_info omap_serial_default_info[] __initdata = {
+ 	{
