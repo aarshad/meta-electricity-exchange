@@ -1,0 +1,25 @@
+From 1ba3bff7cb5051d11713f889ca7f8baaa362ce50 Mon Sep 17 00:00:00 2001
+From: Adeel Arshad <embeddi.zone@gmail.com>
+Date: Sun, 5 Aug 2018 11:48:07 +0100
+Subject: [PATCH] disable video support
+
+Signed-off-by: Adeel Arshad <embeddi.zone@gmail.com>
+---
+ include/configs/mx6var_som.h | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/include/configs/mx6var_som.h b/include/configs/mx6var_som.h
+index d9b78b0..39693b2 100644
+--- a/include/configs/mx6var_som.h
++++ b/include/configs/mx6var_som.h
+@@ -449,7 +449,6 @@
+ #endif
+ 
+ /* Framebuffer */
+-#define CONFIG_VIDEO
+ #ifdef CONFIG_VIDEO
+ #define CONFIG_VIDEO_IPUV3
+ #define CONFIG_CFB_CONSOLE
+-- 
+2.7.4
+

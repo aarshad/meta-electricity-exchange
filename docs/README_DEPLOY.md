@@ -38,6 +38,7 @@ Reboot the device and run the following commands on the u-boot prompt to flash t
     > nand erase.part rootfs
     > nand write.trimffs 0x18100000 rootfs $filesize
     
+    > env default -a
     > setenv rootfs_device nand
     > saveenv
     
@@ -86,6 +87,7 @@ Reboot the device and run the following commands on the u-boot prompt to flash t
 
 After the reboot interrupt the boot again to run the following commands on u-boot prompt to load the root file system from NAND flash for once and from EMMC for the rest.
 
+    > env default -a
     > setenv rootfs_device emmc
     > saveenv
     > setenv rootfs_device nand

@@ -16,8 +16,9 @@ SRC_URI_append = " \
 	file://0013-add-180-degree-rotation-support.patch \
 	file://0014-disable-the-penguin-boot-logo.patch \
 	file://0015-invert-x-and-y-axis-of-usb-touch-panel.patch \
-    file://0016-remove-debug-log-uart-overrun-error.patch \
-    file://0017-update-dma-buffer-size.patch \
+	file://0016-set-iotas-boot-logo.patch \
+    file://0017-remove-debug-log-uart-overrun-error.patch \
+    file://0018-update-dma-buffer-size.patch \
 "
 
 LOCALVERSION_elecex-zgateway-mx6 = "-mx6"
