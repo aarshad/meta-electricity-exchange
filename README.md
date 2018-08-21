@@ -29,7 +29,7 @@ Download Yocto Morty based on Freescale Community BSP
 
     $ mkdir ~/elecex-yocto
     $ cd ~/elecex-yocto
-    $ repo init -u https://github.com/paulmccarthy/elecex_manifest.git -b morty
+    $ repo init -u https://github.com/aarshad/elecex_manifest.git -b morty
     $ repo sync -j8
 
 Setup and build Yocto
