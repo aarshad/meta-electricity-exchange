@@ -1,0 +1,12 @@
+diff --git a/drivers/tty/serial/imx.c b/drivers/tty/serial/imx.c
+index c9bd603d395b..79acc2c6061b 100644
+--- a/drivers/tty/serial/imx.c
++++ b/drivers/tty/serial/imx.c
+@@ -756,7 +756,6 @@ static irqreturn_t imx_int(int irq, void *dev_id)
+ 		writel(USR1_AWAKE, sport->port.membase + USR1);
+
+ 	if (sts2 & USR2_ORE) {
+-		dev_err(sport->port.dev, "Rx FIFO overrun\n");
+ 		sport->port.icount.overrun++;
+ 		writel(USR2_ORE, sport->port.membase + USR2);
+ 	}
